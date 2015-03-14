@@ -28,9 +28,10 @@
 资源路径格式：
 
 ```
-http(s)://:domain_name/:resources/{specific_resource}/actions/:action
+http(s)://:domain_name/:version/:resources/{specific_resource}/actions/:action
 ```
 * :domain_name 域名
+* :version api 版本，从 1 开始
 * :resources 表示资源名称，使用英文复数
 * :action 为个别资源指定特殊行为。首选不需要指定任何特殊行为的资源路径，即不包含/actions/:action。
 
@@ -38,9 +39,9 @@ http(s)://:domain_name/:resources/{specific_resource}/actions/:action
 
 ```
 // 查找图片
-GET http://api.shaimei.com/shares/1000
+GET http://api.shaimei.com/v1/shares/1000
 // 图片格式转换
-PUT http://api.shaimei.com/pictures/1001/actions/convert-format
+PUT http://api.shaimei.com/v2/pictures/1001/actions/convert-format
 
 ```
 
@@ -119,3 +120,4 @@ http://open-api.shaimei.com/pictures/1001/actions/convert-format
 <a href="http://restcookbook.com/HTTP%20Methods/put-vs-post/">restful cook book</a><br/>
 <a href="https://github.com/interagent/http-api-design">heroku http api design guide</a><br/>
 <a id="RFC-5789" href="http://tools.ietf.org/html/rfc5789">RFC 5789</a><br/>
+<a href="https://ihower.tw/blog/archives/6483">http verbs: 谈post、put、patch的应用</a><br/>
