@@ -8,6 +8,7 @@
   * [为了方便而支持非ID的间接引用](#support-non-id-dereferencing)
   * [最小化路径嵌套](#minimize-path-nesting)
   * [路径大小写与属性命名风格](#path-letter-case-and-attr-naming-style)
+* [参考资源](#referenced-resources)
 
 
 ## <a id="requests">请求</a>
@@ -19,7 +20,7 @@
 | GET | 查找资源 |
 | POST | 创建资源 |
 | PUT | 修改资源 |
-| PATCH | 修改资源。put与patch的不同体现在服务器处理 请求中封闭的实体以更新request uri所标示的资源 的方式。对于put请求，其中封闭的实体被认为是存储在原始服务器上的资源的一个修改版本，而客户端正在请求替换掉当前服务器上存储的版本。然而，对于patch请求，封闭的实体包含了一系列指令，它们描述当前存在于原始服务器上的某个资源应该如何被修改以生成一个新的版本。patch方法影响request uri标示的资源，并且也可能对其他资源有副作用。也就是说，应用patch方法可能会创建新资源，也可能会修改已存在资源。更多请参考：[RFC 5789](http://tools.ietf.org/html/rfc5789) |
+| PATCH | 修改资源。put与patch的不同体现在服务器处理 请求中封闭的实体以更新request uri所标示的资源 的方式。对于put请求，其中封闭的实体被认为是存储在原始服务器上的资源的一个修改版本，而客户端正在请求替换掉当前服务器上存储的版本。然而，对于patch请求，封闭的实体包含了一系列指令，它们描述当前存在于原始服务器上的某个资源应该如何被修改以生成一个新的版本。patch方法影响request uri标示的资源，并且也可能对其他资源有副作用。也就是说，应用patch方法可能会创建新资源，也可能会修改已存在资源。更多请参考：[RFC 5789][] |
 | DELETE | 删除资源 |
 
 ### <a id="consistent-resource-path-formats">使用一致的资源路径格式</a>
@@ -113,3 +114,8 @@ http://open-api.shaimei.com/pictures/1001/actions/convert-format
 	"pictureId" : "2sdfs43dfv-sdf"
 }
 ```
+## <a id="referenced-resources">参考资源</a>
+
+[restful cook book]: <http://restcookbook.com/HTTP%20Methods/put-vs-post/>
+[heroku http api design guide]: <https://github.com/interagent/http-api-design>
+[RFC 5789]: <http://tools.ietf.org/html/rfc5789>
