@@ -121,3 +121,4 @@ http://open-api.shaimei.com/pictures/1001/actions/convert-format
 <a href="https://github.com/interagent/http-api-design">heroku http api design guide</a><br/>
 <a id="RFC-5789" href="http://tools.ietf.org/html/rfc5789">RFC 5789</a><br/>
 <a href="https://ihower.tw/blog/archives/6483">http verbs: 谈post、put、patch的应用</a><br/>
+<a href="https://developer.github.com/v3/">github open api</a>
