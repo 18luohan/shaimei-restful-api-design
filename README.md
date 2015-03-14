@@ -116,6 +116,6 @@ http://open-api.shaimei.com/pictures/1001/actions/convert-format
 ```
 ## <a id="referenced-resources">参考资源</a>
 
-<a href="http://restcookbook.com/HTTP%20Methods/put-vs-post/">restful cook book</a>
-<a href="https://github.com/interagent/http-api-design">heroku http api design guide</a>
-<a id="RFC-5789" href="http://tools.ietf.org/html/rfc5789">RFC 5789</a>
+<a href="http://restcookbook.com/HTTP%20Methods/put-vs-post/">restful cook book</a><br/>
+<a href="https://github.com/interagent/http-api-design">heroku http api design guide</a><br/>
+<a id="RFC-5789" href="http://tools.ietf.org/html/rfc5789">RFC 5789</a><br/>
