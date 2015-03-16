@@ -1,5 +1,7 @@
 # 晒美Restful API规范
 
+* [基础](#foundations)
+  * [时间戳](#timestamp)
 * [请求](#requests)
   * [HTTP方法使用场景](#http-method-using-scene)
   * [使用一致的资源路径格式](#consistent-resource-path-formats)
@@ -10,6 +12,14 @@
   * [路径大小写与属性命名风格](#path-letter-case-and-attr-naming-style)
 * [参考资源](#referenced-resources)
 
+## <a id="foundations">基础</a>
+
+### <a id="timestamp">时间戳</a>
+
+所有时间戳统一采用 ISO-8601 格式，Java语言的格式字符串为：yyyy-MM-dd'T'HH:mm:ssZ，例如：
+```
+2015-03-16T20:01:52+0800
+```
 
 ## <a id="requests">请求</a>
 
